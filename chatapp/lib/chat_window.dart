@@ -24,6 +24,10 @@ class Message extends StatelessWidget {
               color: Colors.grey,
             ),
           Container(
+            constraints: BoxConstraints(
+              maxWidth: MediaQuery.of(context).size.width *
+                  0.7, // Set a maximum width for the container
+            ),
             margin: const EdgeInsets.only(left: 8.0),
             padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
             decoration: BoxDecoration(
